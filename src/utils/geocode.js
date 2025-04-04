@@ -1,13 +1,15 @@
 const request = require("request");
 
 const geocode = (address, callback) => {
+  const apiKey = process.env.GEO_API_KEY;
   var options = {
     method: "GET",
     json: true,
     url:
       "https://api.geoapify.com/v1/geocode/search?text=" +
       address +
-      "&apiKey=4589c1af08fd4bd99ca11bbd564d8447",
+      "&apiKey=" +
+      apiKey,
     headers: {},
   };
 
