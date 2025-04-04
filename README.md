@@ -25,12 +25,17 @@ A simple weather application built with **Node.js**, **Express**, and **Handleba
    git clone https://github.com/siddhant197/node-weather-app.git
    cd node-weather-app
 2. **Install Dependencies**
+   ```bash
    npm install
 4. **Create Environment Variables**
+   ```bash
    touch .env
-   GEO_API_KEY=your_mapbox_api_key
+
+   Add below lines with keys
+   GEO_API_KEY=your_api_key
    WEATHER_API_KEY=your_weatherstack_api_key
-5. **Run the App**
+6. **Run the App**
+   ```bash
    npm start
+   
    By default, it runs on: **http://localhost:3000**
-6. **Test the App**
