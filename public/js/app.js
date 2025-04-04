@@ -13,8 +13,12 @@ function submitForm(e) {
       if (data.error) {
         messageOne.textContent = data.error;
       } else {
+        const { description, temperature, feelslike, humidity } = data.forecast;
         messageOne.textContent = data.location;
-        messageTwo.textContent = data.forecast;
+        messageTwo.innerHTML = `
+        <strong>${description} skies ahead!</strong><br>
+        It's currently <strong>${temperature}°C</strong>, feels like <strong>${feelslike}°C</strong>, with <strong>${humidity}% humidity</strong>.
+      `;
       }
     });
   });

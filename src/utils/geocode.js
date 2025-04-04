@@ -20,7 +20,10 @@ const geocode = (address, callback) => {
       const data = response.body.features[0].properties;
       const latitude = data.lat;
       const longitude = data.lon;
-      const location = `${data.city}, ${data.state}, ${data.country}`;
+      const locationParts = [data.city, data.state, data.country].filter(
+        Boolean
+      );
+      const location = locationParts.join(", ");
       callback(undefined, { latitude, longitude, location });
     }
   });

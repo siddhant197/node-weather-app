@@ -1,17 +1,46 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/img/weather.png">
-    <link rel="stylesheet" href="/css/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="main-content">
-        {{>header}}
-        <p>{{helpText}}</p>
-    </div>
-    
-    {{>footer}}
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/img/weather.png">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main-content">
+    {{>header}}
+    <section class="how-to-use">
+      <h2>🌤️ How to Use the Weather App</h2>
+      <ol class="steps">
+        <li>Enter the name of a city in the search box.</li>
+        <li>Click the <strong>"Get Weather"</strong> button.</li>
+        <li>The app will fetch and display the latest weather information including:
+          <ul>
+            <li>🌡️ Temperature</li>
+            <li>⛅ Description (like cloudy, sunny, rainy)</li>
+            <li>🤗 Feels like</li>
+            <li>💧 Humidity</li>
+          </ul>
+        </li>
+      </ol>
+
+      <div class="note">
+        <h3>🔐 If you get an error or no result:</h3>
+        <ul>
+          <li>Make sure the city name is spelled correctly.</li>
+          <li>The app relies on a weather API, so data accuracy depends on the source.</li>
+          <li>Try refreshing or using a different city if results seem off.</li>
+        </ul>
+      </div>
+
+      <p class="support">💬 Still stuck? Feel free to <a href="https://github.com/siddhant197/node-weather-app/issues"
+          target="_blank">raise an issue on GitHub</a> or reach out for support!</p>
+    </section>
+  </div>
+
+  {{>footer}}
+</body>
+
 </html>

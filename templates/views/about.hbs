@@ -1,17 +1,29 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/img/weather.png">
-    <link rel="stylesheet" href="/css/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="main-content">
-        {{>header}}
-        <img class="portrait" src="/img/me.png">
-    </div>
-    
-    {{>footer}}
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/img/weather.png">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main-content">
+    {{>header}}
+    <p>
+      <strong>Weather App</strong> is a simple and intuitive application that helps you check the current weather in any
+      city around the world.
+      Built using <strong>Node.js</strong> and <strong>Express</strong>, it fetches real-time data from a weather API
+      and presents it in a clean, user-friendly format.
+    </p>
+    <p>
+      This project was built as part of a learning journey into <strong>backend development</strong>,
+      <strong>APIs</strong>, and deployment on cloud platforms like <strong>Render</strong>.
+    </p>
+  </div>
+
+  {{>footer}}
+</body>
+
 </html>
